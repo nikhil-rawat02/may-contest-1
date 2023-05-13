@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 99vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#btn{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    transition: 0.8s;
+}
+#btn:hover{
+    cursor: pointer;
+    background-color: black;
+    color: #efefef;
+}
+.post-card-container, .product-card-container{
+    width: 90%;
+    height: 100%;
+    padding: 10px 30px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;    
+}
+.post-card, .product-card{
+    box-shadow:  1px 1px 3px black ;
+    background-color: #efefef;
+}
+.top,.tags-reaction{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    font-weight: 200;
+    font-size: 13px;
+}
+.desciption{
+    padding: 10px 10px;
+}
+.product-card{
+    background-color: rgb(148, 240, 136);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 470px;
+    position: relative;
+}
+.thumbnail{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thumbnail img{
+    width: 70%;
+    height: 200px;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+.description1{
+    display: flex;
+    gap: 10px;
+}
+
+.imgs img{
+    width: 50px;
+    height: 50px;
+}
+.buyNow{
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+}
+.buyNow button{
+    width: 80%;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    transition: 0.8s;
+}
+.buyNow button:hover{
+    cursor: pointer;
+    filter: invert(100%);
+}
+.description2{
+    padding: 0px 19px;
+}
+.product-card-container span, .product-card-container p {
+    font-size: 13px;
+    font-weight: 400;
+}
+table,thead, tr,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table{
+    width: 90%;
+}
+.tdis{
+    width: 500px;
+}
